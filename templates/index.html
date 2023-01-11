@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>wikipedia article suggestion</title>
+        <style>
+            body {
+                background-color: lightblue;
+                font-family: Arial, sans-serif;
+            }
+            p {
+                text-align: center;
+                font-size: 36px;
+                margin-top: 50px;
+                margin-bottom: 20px;
+            }
+            form {
+                width: 50%;
+                margin: 0 auto;
+                text-align: center;
+                background-color: #fff;
+                padding: 20px;
+                border-radius: 10px;
+                box-shadow: 2px 2px 10px #ccc;
+            }
+            label {
+                font-size: 18px;
+                display: block;
+                margin-bottom: 10px;
+            }
+            input[type=text] {
+                width: 100%;
+                padding: 12px 20px;
+                margin-bottom: 20px;
+                box-sizing: border-box;
+                border: 2px solid #ccc;
+                border-radius: 4px;
+                font-size: 16px;
+            }
+            input[type=submit] {
+                background-color: #4CAF50;
+                color: white;
+                padding: 12px 10px;
+                padding: 12px 10px;
+                border: none;
+                border-radius: 4px;
+                cursor: pointer;
+                font-size: 18px;
+
+            }
+            input[type=submit]:hover {
+                background-color: #45a049;
+            }
+
+
+        </style>
+    </head>
+    <body>
+        <p>Wikipedia Article Suggestor</p>
+        <form action="/suggest" method="post">
+            <label for="topic">Enter a preference to get suggested article :</label>
+            <input type="text" id="topic" name="topic" required>
+            <input type="submit" value="Suggest">
+        </form>
+
+
+    </body>
+</html>

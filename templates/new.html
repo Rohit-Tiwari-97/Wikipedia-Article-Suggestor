@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>New Preference</title>
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                height: 100vh;
+                background-color: lightblue;
+            }
+            .box {
+                background-color: #f2f2f2;
+                padding: 30px;
+                border-radius: 10px;
+                box-shadow: 2px 2px 10px #ccc;
+                text-align: center;
+            }
+            p {
+                font-size: 20px;
+                color: #333;
+                margin-bottom: 20px;
+            }
+            b {
+                color: #28a745;
+            }
+            form {
+                margin-top: 50px;
+                display: flex;
+                justify-content: center;
+            }
+            button {
+                background-color: #28a745;
+                color: #fff;
+                padding: 15px 32px;
+                font-size: 18px;
+                border: none;
+                cursor: pointer;
+                margin: 0 10px;
+            }
+            button:hover {
+                background-color: #218838;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="box">
+            <p>Do you want to enter <b>New preference?</b> or want to <b>exit from app?</b></p>
+            <form action="/newtopic" method="POST">
+                <button type="submit" name="response" value="yes">New preference</button>
+                <button type="submit" name="response" value="no">Exit</button>
+            </form>
+        </div>
+    </body>
+</html>
